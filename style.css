@@ -1,9 +1,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+:root {
+    --blue: #1d9bf0;
+    --green: #00ba7c;
+    --pink: #e01874;
+    --gray: #70757a;
+    --primary-color: black;
+    --secondary-color: #1b1d21;
+    --trinary-color: #2f3336; 
+}
+
 body {
     background-color: black;
     font-family: Inter, Arial, Helvetica, sans-serif;
     color: white;
+    margin: 0;
+}
+
+
+.center {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 2px;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--trinary-color);
+}
+
+.flashcard-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.flashcard {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+}
+
+.flashcard-button {
+    background-color: transparent;
+    padding: 0;
+    font-weight: normal;
+    color: var(--gray);
+    margin: 0 15px;
+}
+
+.flashcard-button:hover {
+    color: var(--green);
+}
+
+.flashcard-buttons {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    bottom: 50px;
+}
+
+.deck-button  {
+    width: 100%;
+    background-color: transparent;
+    text-align: left;
+    padding: 10px;
+    font-weight: normal;
+}
+
+.deck-button:hover {
+    background-color: rgba(0, 0, 0, 0.328);
+}
+
+button {
+    background-color: var(--green);
+    font: inherit;
+    color: inherit;
+    border: none;
+    font-weight: bold;
+    padding: 15px 50px 15px 50px;
+    border-radius: 100px;
+}
+
+hr {
+    color: var(--trinary-color);
 }
 
 h1 {
@@ -28,6 +114,7 @@ h5 {
 
 h6 {
     font-size: 24px;
+    margin: 0;
 }
 
 p {
